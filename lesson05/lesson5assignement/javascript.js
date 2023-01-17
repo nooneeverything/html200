@@ -16,7 +16,8 @@ let balance = 100;
       function Withdraw() {
         let withdraw = prompt("How much would you like to withdraw?");
         balance = balance - withdraw;
-        console.log("Amount withdrawn-" + withdraw + "; New balance: $" + balance);
+
+        alert("Amount withdrawn-" + withdraw + "; New balance: $" + balance);
       }
       Withdraw();
       break;
@@ -25,7 +26,7 @@ let balance = 100;
       function Deposit() {
         let deposit = prompt("Amount to be deposited:");
         balance = balance + deposit;
-        console.log("Deposit-" + deposit + "; New balance: $" + balance);
+        alert("Deposit-" + deposit + "; New balance: $" + balance);
       }
       Deposit();
       break;
@@ -33,10 +34,11 @@ let balance = 100;
 
       case "B":
       function Balance() {
-        console.log("Your balance is - $" + balance);
+
+        alert("Your balance is - $" + balance);
       }
       Balance();
-      break;  
+      break;
 
 
     default:
