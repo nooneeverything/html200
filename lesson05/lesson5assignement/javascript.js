@@ -25,7 +25,7 @@ let balance = 100;
     case "D":
       function Deposit() {
         let deposit = prompt("Amount to be deposited:");
-        balance = balance + deposit;
+        balance= parseInt(balance) + parseInt(deposit);
         alert("Deposit-" + deposit + "; New balance: $" + balance);
       }
       Deposit();
